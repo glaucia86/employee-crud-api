@@ -1,0 +1,23 @@
+{
+  "name": "employee-crud-api",
+  "version": "1.0.0",
+  "description": "Aplicação CRUD API em Node.js que alimentará os 4 principais frameworks do mercado.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/glaucia86/employee-crud-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/glaucia86/employee-crud-api/issues"
+  },
+  "homepage": "https://github.com/glaucia86/employee-crud-api#readme",
+  "devDependencies": {
+    "eslint": "^7.4.0"
+  }
+}
