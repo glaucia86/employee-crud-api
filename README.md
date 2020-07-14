@@ -43,7 +43,7 @@ Como dito durante as live codings, sempre estaremos citando links e recursos imp
 - ✅ **[E-Book Grátis - Azure Serverless Computing Cookbook](https://azure.microsoft.com/pt-br/resources/azure-serverless-computing-cookbook/?WT.mc_id=nodejs_postgresql_azure-github-gllemos)**
 - ✅ **[Cursos Grátis - Azure Functions](https://docs.microsoft.com/pt-br/learn/paths/create-serverless-applications/?WT.mc_id=livecoding-github-gllemos)**
 
-## Tenho Dúvidas... O que Faço?! ❓
+## ❓ Tenho Dúvidas... O que Faço?! 
 
 Caso tenham dúvidas aos códigos desenvolvidos durante a série de artigos, sintam-se a vontade em abrir uma **[ISSUE AQUI](https://github.com/glaucia86/employee-crud-api/issues)**. Assim que possível, estarei respondendo as todas as dúvidas que tiverem!
 
