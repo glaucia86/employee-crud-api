@@ -2,16 +2,32 @@
   "name": "employee-crud-api",
   "version": "1.0.0",
   "description": "Aplicação CRUD API em Node.js que alimentará os 4 principais frameworks do mercado.",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon",
+    "lint": "eslint --ext .js -f ./node_modules/eslint-friendly-formatter . --fix",
+    "prepush": "npm run lint",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/glaucia86/employee-crud-api.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "nodejs",
+    "api",
+    "crud",
+    "azure-functions",
+    "express",
+    "github-actions",
+    "swa",
+    "serverless",
+    "azure",
+    "postgresql",
+    "sql",
+    "javascript"
+  ],
+  "author": "Glaucia Lemos <@glaucia_lemos - Twitter>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/glaucia86/employee-crud-api/issues"
@@ -25,6 +41,7 @@
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
+    "eslint-friendly-formatter": "^4.0.1",
     "express": "^4.17.1",
     "express-promise-router": "^4.0.1",
     "pg": "^8.3.0"
