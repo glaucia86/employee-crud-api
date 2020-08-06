@@ -6,6 +6,7 @@ Repositório responsável pela série de vídeos desenvolvendo uma única API qu
 * React
 * Vue
 * Svelte
+* Fast Design
 
 A intenção é criar uma aplicação CRUD (API) que permite ser usada nesses 4 principais frameworks!
 Se desejarem entender o passo a passo no desenvolvimento dessa API, eu escrevi um artigo no dev.to **[AQUI](https://dev.to/azure/desenvolvendo-uma-aplicacao-crud-node-js-com-postgresql-3clk)**. 
@@ -15,6 +16,7 @@ Se desejarem entender o passo a passo no desenvolvimento dessa API, eu escrevi u
 * **[Visual Studio Code](https://code.visualstudio.com/?WT.mc_id=livecoding-github-gllemos)**
 * **[Node.js](https://nodejs.org/en/)**
 * **[Postman](https://www.getpostman.com/)**
+* **[Fast Design](https://www.fast.design/)**
 * **[PostgreSQL - PgAdmin](https://www.postgresql.org/download/)**
 * **[Conta - Azure](https://azure.microsoft.com/pt-br/?WT.mc_id=livecoding-github-gllemos)**
 * **[Azure Web App Service](https://azure.microsoft.com/services/app-service/?WT.mc_id=livecoding-github-gllemos)**
