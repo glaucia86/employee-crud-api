@@ -1,0 +1,5 @@
+[0814/220425.265:ERROR:process_reader_win.cc(123)] NtOpenThread: {Acesso Negado} Um processo solicitou acesso a um objeto, mas o direito de acesso não lhe foi concedido. (0xc0000022)
+[0814/220425.271:ERROR:exception_snapshot_win.cc(98)] thread ID 15456 not found in process
+[0814/220425.279:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: Tentou-se acessar um processo de saída. (0xc000010a)
+[0814/220425.290:ERROR:process_reader_win.cc(123)] NtOpenThread: {Acesso Negado} Um processo solicitou acesso a um objeto, mas o direito de acesso não lhe foi concedido. (0xc0000022)
+[0814/220425.290:ERROR:exception_snapshot_win.cc(98)] thread ID 4664 not found in process
