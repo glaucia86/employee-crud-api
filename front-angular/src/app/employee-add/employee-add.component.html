@@ -1,27 +1,79 @@
 <div class="card">
   <div class="card-body">
-    <form>
+    <form [formGroup]="employeeForm" novalidate>
+      <!-- INÍCIO BLOCO: Employee Name -->
       <div class="form-group">
         <label class="font-weight-bold" for="employee-name">Employee Name</label>
-        <input type="text" class="form-control" placeholder="Type your Name"/>
+        <input type="text" class="form-control" placeholder="Type your Name" formControlName="employeeName"
+          #employeeName />
       </div>
+      <div *ngIf="employeeForm.controls['employeeName'].invalid
+              && (employeeForm.controls['employeeName'].dirty
+              || employeeForm.controls['employeeName'].touched)" class="alert alert-danger">
+        <div *ngIf="employeeForm.controls['employeeName'].errors.required">
+          The field 'Employee Name' is required.
+        </div>
+      </div>
+      <!-- FIM BLOCO: Employee Name -->
+
+      <!-- INÍCIO BLOCO: Job Role -->
       <div class="form-group">
         <label class="font-weight-bold" for="job-role">Job Role</label>
-        <input class="form-control" type="text" placeholder="Type your Job Role" />
+        <input class="form-control" type="text" placeholder="Type your Job Role" formControlName="jobRole"
+          #jobRole />
       </div>
+      <div *ngIf="employeeForm.controls['jobRole'].invalid
+              && (employeeForm.controls['jobRole'].dirty
+              || employeeForm.controls['jobRole'].touched)" class="alert alert-danger">
+        <div *ngIf="employeeForm.controls['jobRole'].errors.required">
+          The field 'Job Role' is required.
+        </div>
+      </div>
+      <!-- FIM BLOCO: Job Role -->
+
+      <!-- INÍCIO BLOCO: Salary -->
       <div class="form-group">
         <label class="font-weight-bold" for="salary">Salary</label>
-        <input class="form-control" type="text" placeholder="Type your Salary"/>
+        <input class="form-control" type="text" placeholder="Type your Salary" formControlName="salary"
+        #salary />
       </div>
+      <div *ngIf="employeeForm.controls['salary'].invalid
+              && (employeeForm.controls['salary'].dirty
+              || employeeForm.controls['salary'].touched)" class="alert alert-danger">
+        <div *ngIf="employeeForm.controls['salary'].errors.required">
+          The field 'Salary' is required.
+        </div>
+      </div>
+      <!-- FIM BLOCO: Job Role -->
+
+      <!-- INÍCIO BLOCO: Birth -->
       <div class="form-group">
         <label class="font-weight-bold" for="birth">Birth</label>
-        <input class="form-control" type="date" placeholder="YYYY/MM/DD/"/>
+        <input class="form-control" type="date" placeholder="YYYY/MM/DD/" formControlName="birth"/>
         <!-- <input type="date" class="form-control" name="birth" [(ngModel)]="matterData.birth" [ngModel]="matterData.birth | date:'YYYY/MM/dd'" required>-->
       </div>
+      <div *ngIf="employeeForm.controls['birth'].invalid
+              && (employeeForm.controls['birth'].dirty
+              || employeeForm.controls['birth'].touched)" class="alert alert-danger">
+        <div *ngIf="employeeForm.controls['birth'].errors.required">
+          The field 'Birth' is required.
+        </div>
+      </div>
+      <!-- FIM BLOCO: Birth -->
+
+      <!-- INÍCIO BLOCO: Employee Registration -->
       <div class="form-group">
         <label class="font-weight-bold" for="employee-registration">Employee Registration</label>
-        <input class="form-control" type="text" class="form-control" placeholder="Type your Employee Registration"/>
+        <input class="form-control" type="text" class="form-control" placeholder="Type your Employee Registration" formControlName="employeeRegistration" #employeeRegistration/>
       </div>
+      <div *ngIf="employeeForm.controls['employeeRegistration'].invalid
+              && (employeeForm.controls['employeeRegistration'].dirty
+              || employeeForm.controls['employeeRegistration'].touched)" class="alert alert-danger">
+        <div *ngIf="employeeForm.controls['employeeRegistration'].errors.required">
+          The field 'Employee Registration' is required.
+        </div>
+      </div>
+      <!-- FIM BLOCO: Employee Registration -->
     </form>
   </div>
 </div>
