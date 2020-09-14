@@ -12,6 +12,7 @@ import { AppComponent } from './app.component';
 import { EmployeeAddComponent } from './employee-add/employee-add.component';
 import { EmployeeEditComponent } from './employee-edit/employee-edit.component';
 import { EmployeeGetComponent } from './employee-get/employee-get.component';
+import { EmployeeService } from './employee.service';
 
 registerLocaleData(ptBr, 'pt-BR');
 
@@ -30,6 +31,7 @@ registerLocaleData(ptBr, 'pt-BR');
     HttpClientModule
   ],
   providers: [
+    EmployeeService,
     {
       provide: LOCALE_ID,
       useValue: 'pt-BR'
