@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { EmployeeService } from '../employee.service';
 
 @Component({
   selector: 'app-employee-add',
@@ -11,7 +12,7 @@ export class EmployeeAddComponent implements OnInit {
 
   employeeForm: FormGroup;
 
-  constructor(private formBuilder: FormBuilder) {
+  constructor(private formBuilder: FormBuilder, private employeeService: EmployeeService) {
     this.createForm();
   }
 
@@ -23,6 +24,11 @@ export class EmployeeAddComponent implements OnInit {
       birth: ['', Validators.required],
       employeeRegistration: ['', Validators.required]
     });
+  }
+
+  // tslint:disable-next-line:typedef
+  createNewEmployee(employeeName, jobRole, salary, birth, employeeRegistration) {
+    this.employeeService.createNewEmployee(employeeName, jobRole, salary, birth, employeeRegistration);
   }
 
   ngOnInit(): void {

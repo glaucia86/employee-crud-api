@@ -10,7 +10,9 @@ const db = require('../config/database');
 
 // ==> Método responsável por criar um novo 'Employee':
 exports.createEmployee = async(req, res) => {
-  const { name, job_role, salary, birth, employee_registration } = req.body;
+  // ==> Aqui estou atribuindo as propriedades criadas no Front para persistir na
+  // ==> base de dados no lado do Back-End
+  const { employeeName: name, jobRole: job_role, salary: salary, birth: birth, employeeRegistration: employee_registration } = req.body;
   const { rows } = await db.query(
     "INSERT INTO employee (name, job_role, salary, birth, employee_registration) VALUES ($1, $2, $3, $4, $5)",
       [name, job_role, salary, birth, employee_registration]
@@ -40,7 +42,7 @@ exports.findEmployeeById = async(req, res) => {
 // ==> Método responsável por atualizar um determinado 'Employee' por Id:
 exports.updateEmployeeById = async(req, res) => {
   const employeeId = req.params.id;
-  const { name, job_role, salary, birth, employee_registration } = req.body;
+  const { employeeName: name, jobRole: job_role, salary: salary, birth: birth, employeeRegistration: employee_registration } = req.body;
 
   const response = await db.query(
     `UPDATE employee 

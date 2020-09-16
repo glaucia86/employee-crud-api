@@ -49,7 +49,7 @@
       <!-- INÍCIO BLOCO: Birth -->
       <div class="form-group">
         <label class="font-weight-bold" for="birth">Birth</label>
-        <input class="form-control" type="date" placeholder="YYYY/MM/DD/" formControlName="birth"/>
+        <input class="form-control" type="date" placeholder="YYYY/MM/DD/" formControlName="birth" #birth/>
         <!-- <input type="date" class="form-control" name="birth" [(ngModel)]="matterData.birth" [ngModel]="matterData.birth | date:'YYYY/MM/dd'" required>-->
       </div>
       <div *ngIf="employeeForm.controls['birth'].invalid
@@ -74,6 +74,13 @@
         </div>
       </div>
       <!-- FIM BLOCO: Employee Registration -->
+
+      <div class="form-group">
+        <button (click)="createNewEmployee(employeeName.value, jobRole.value, salary.value, birth.value, employeeRegistration.value)"
+          class="btn btn-primary" [disabled]="employeeForm.pristine || employeeForm.invalid"> Add New Employee
+          <!--<fa-icon [icon]="['fas', 'user-plus']"> Employee</fa-icon>-->
+        </button>
+      </div>
     </form>
   </div>
 </div>
