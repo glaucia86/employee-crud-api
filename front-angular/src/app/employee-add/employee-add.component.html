@@ -77,8 +77,8 @@
 
       <div class="form-group">
         <button (click)="createNewEmployee(employeeName.value, jobRole.value, salary.value, birth.value, employeeRegistration.value)"
-          class="btn btn-primary" [disabled]="employeeForm.pristine || employeeForm.invalid"> Add New Employee
-          <!--<fa-icon [icon]="['fas', 'user-plus']"> Employee</fa-icon>-->
+          class="btn btn-primary" [disabled]="employeeForm.pristine || employeeForm.invalid">
+          <fa-icon [icon]="['fas', 'user-plus']"></fa-icon> Employee
         </button>
       </div>
     </form>

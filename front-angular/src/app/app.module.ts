@@ -9,10 +9,13 @@ import { registerLocaleData } from '@angular/common';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesome';
+
 import { EmployeeAddComponent } from './employee-add/employee-add.component';
 import { EmployeeEditComponent } from './employee-edit/employee-edit.component';
 import { EmployeeGetComponent } from './employee-get/employee-get.component';
 import { EmployeeService } from './employee.service';
+import { faEdit, faTrash, faUserPlus } from '@fortawesome/free-solid-svg-icons';
 
 registerLocaleData(ptBr, 'pt-BR');
 
@@ -26,6 +29,7 @@ registerLocaleData(ptBr, 'pt-BR');
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FontAwesomeModule,
     SlimLoadingBarModule,
     ReactiveFormsModule,
     HttpClientModule
@@ -39,4 +43,10 @@ registerLocaleData(ptBr, 'pt-BR');
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  constructor(library: FaIconLibrary) {
+
+    // Add an icon to the library for convenient access in other components
+    library.addIcons(faEdit, faTrash, faUserPlus);
+  }
+}

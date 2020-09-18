@@ -20,6 +20,8 @@
     "@angular/platform-browser-dynamic": "~10.0.9",
     "@angular/router": "~10.0.9",
     "@fortawesome/angular-fontawesome": "^0.7.0",
+    "@fortawesome/fontawesome-svg-core": "^1.2.30",
+    "@fortawesome/free-solid-svg-icons": "^5.14.0",
     "bootstrap": "^4.5.2",
     "ng2-slim-loading-bar": "^4.0.0",
     "rxjs": "~6.5.5",
