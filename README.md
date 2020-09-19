@@ -2,7 +2,7 @@
 
 Repositório responsável pela série de vídeos desenvolvendo uma única API que será usada em diferentes frameworks:
 
-* Angular
+* [Angular](https://angular.io/)
 * React
 * Vue
 * Svelte
