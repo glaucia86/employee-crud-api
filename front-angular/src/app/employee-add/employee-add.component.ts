@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { EmployeeService } from '../employee.service';
 
+import Swal from 'sweetalert2';
+
 @Component({
   selector: 'app-employee-add',
   templateUrl: './employee-add.component.html',
@@ -26,9 +28,20 @@ export class EmployeeAddComponent implements OnInit {
     });
   }
 
-  // tslint:disable-next-line:typedef
+  /**
+   * Método responsável por adicionar um novo 'Employee' --> ação do botão
+   */
   createNewEmployee(employeeName, jobRole, salary, birth, employeeRegistration) {
     this.employeeService.createNewEmployee(employeeName, jobRole, salary, birth, employeeRegistration);
+
+    Swal.fire({
+      title: 'Employee added successfully!',
+      icon: 'success',
+      timer: 1500,
+      showConfirmButton: true
+    });
+
+    this.employeeForm.reset();
   }
 
   ngOnInit(): void {
