@@ -21,13 +21,13 @@ export class EmployeeService {
   /**
    * Método responsável por criar um 'New Employee'
    */
-  createNewEmployee(employeeName, jobRole, salary, birth, employeeRegistration) {
+  createNewEmployee(name, job_role, salary, birth, employee_registration) {
     const employee = {
-      employeeName,
-      jobRole,
+      name,
+      job_role,
       salary,
       birth,
-      employeeRegistration
+      employee_registration
     };
     console.log(employee);
 

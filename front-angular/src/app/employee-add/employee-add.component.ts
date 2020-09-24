@@ -20,19 +20,19 @@ export class EmployeeAddComponent implements OnInit {
 
   createForm(): void {
     this.employeeForm = this.formBuilder.group({
-      employeeName: ['', Validators.required],
-      jobRole: ['', Validators.required],
+      name: ['', Validators.required],
+      job_role: ['', Validators.required],
       salary: ['', Validators.required],
       birth: ['', Validators.required],
-      employeeRegistration: ['', Validators.required]
+      employee_registration: ['', Validators.required]
     });
   }
 
   /**
    * Método responsável por adicionar um novo 'Employee' --> ação do botão
    */
-  createNewEmployee(employeeName, jobRole, salary, birth, employeeRegistration) {
-    this.employeeService.createNewEmployee(employeeName, jobRole, salary, birth, employeeRegistration);
+  createNewEmployee(name, job_role, salary, birth, employee_registration) {
+    this.employeeService.createNewEmployee(name, job_role, salary, birth, employee_registration);
 
     Swal.fire({
       title: 'Employee added successfully!',

@@ -12,11 +12,11 @@
 
   <tbody>
     <tr *ngFor="let employee of employees">
-      <td align="center">{{ employee.employeeName }}</td>
-      <td align="center">{{ employee.jobRole }}</td>
-      <td align="center">{{ employee.salary }}</td>
+      <td align="center">{{ employee.name }}</td>
+      <td align="center">{{ employee.job_role }}</td>
+      <td align="center">{{ employee.salary | currency:'USD':'code' }}</td> <!--{{ money | currency:'USD':'symbol' }}-->
       <td align="center">{{ employee.birth }}</td>
-      <td align="center">{{ employee.employeeRegistration }}</td>
+      <td align="center">{{ employee.employee_registration }}</td>
       <td align="center"><a [routerLink]="['/employee', employee_id]" class="btn btn-success"><fa-icon [icon]="['fas', 'edit']"></fa-icon> Edit</a></td>
       <td align="center"><button (click)="deleteEmployee(employee_id)" class="btn btn-danger"><fa-icon [icon]="['fas','trash']"></fa-icon> Delete</button></td>
     </tr>

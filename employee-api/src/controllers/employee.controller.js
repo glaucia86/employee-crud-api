@@ -12,7 +12,7 @@ const db = require('../config/database');
 exports.createEmployee = async(req, res) => {
   // ==> Aqui estou atribuindo as propriedades criadas no Front para persistir na
   // ==> base de dados no lado do Back-End
-  const { employeeName: name, jobRole: job_role, salary: salary, birth: birth, employeeRegistration: employee_registration } = req.body;
+  const { name, job_role, salary, birth, employee_registration } = req.body;
   const { rows } = await db.query(
     "INSERT INTO employee (name, job_role, salary, birth, employee_registration) VALUES ($1, $2, $3, $4, $5)",
       [name, job_role, salary, birth, employee_registration]
@@ -28,21 +28,33 @@ exports.createEmployee = async(req, res) => {
 
 // ==> Método responsável por listar todos os 'Employees':
 exports.listAllEmployees = async(req, res) => {
-  const response = await db.query('SELECT * FROM employee ORDER BY name ASC');
+  const response = await db.query(`SELECT 
+                                      name, 
+                                      job_role, 
+                                      salary, 
+                                      employee_registration, 
+                                      to_char(birth, 'yyyy-MM-dd') as birth 
+                                  FROM employee ORDER BY name asc`);
   res.status(200).send(response.rows);
 };
 
 // ==> Método responsável por listar um determinado 'Employee' por Id:
 exports.findEmployeeById = async(req, res) => {
   const employeeId = req.params.id;
-  const response = await db.query('SELECT * FROM employee WHERE employee_id = $1', [employeeId]);
+  const response = await db.query(`SELECT 
+                                      name, 
+                                      job_role,
+                                      salary,
+                                      employee_registration
+                                      to_char(birth, 'yyyy-MM-dd') as birth 
+                                  FROM employee WHERE employee_id = $1`, [employeeId]);
   res.status(200).send(response.rows);
 }
 
 // ==> Método responsável por atualizar um determinado 'Employee' por Id:
 exports.updateEmployeeById = async(req, res) => {
   const employeeId = req.params.id;
-  const { employeeName: name, jobRole: job_role, salary: salary, birth: birth, employeeRegistration: employee_registration } = req.body;
+  const { name, job_role, salary, birth, employee_registration } = req.body;
 
   const response = await db.query(
     `UPDATE employee 
