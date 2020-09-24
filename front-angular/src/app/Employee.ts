@@ -5,14 +5,17 @@
  * author: Glaucia Lemos <@glaucia_lemos86>
  * Classes ts: https://www.typescriptlang.org/docs/handbook/classes.html
  */
-import EmployeeDTO from './EmployeeDTO';
 
-export default class Employee {
+export default class Employee  {
   employeeName: string;
   jobRole: string;
   salary: number;
   birth: Date;
   employeeRegistration: number;
 }
+
+
+
+
 
 
