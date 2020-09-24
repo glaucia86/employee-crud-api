@@ -21,7 +21,6 @@ export class EmployeeService {
   /**
    * Método responsável por criar um 'New Employee'
    */
-  // tslint:disable-next-line:typedef
   createNewEmployee(employeeName, jobRole, salary, birth, employeeRegistration) {
     const employee = {
       employeeName,
@@ -37,6 +36,16 @@ export class EmployeeService {
       .http
       .post(`${this.uri}/employees`, employee)
       .subscribe(res => console.log('Feito'));
+  }
+
+  /**
+   * Método responsável por listar todos os 'Employees'
+   */
+  getEmployees() {
+    // ==> (GET - Url no Back-End): http://localhost:3000/api/employees
+    return this
+      .http
+      .get(`${this.uri}/employees`);
   }
 
 }

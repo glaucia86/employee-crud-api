@@ -1,1 +1,24 @@
-<p>employee-get works!</p>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <td align="center"><b>Employee Name</b></td>
+      <td align="center"><b>Job Role</b></td>
+      <td align="center"><b>Salary</b></td>
+      <td align="center"><b>Birth</b></td>
+      <td align="center"><b>Employee Registration</b></td>
+      <td align="center" colspan="2"><b>Actions</b></td>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr *ngFor="let employee of employees">
+      <td align="center">{{ employee.employeeName }}</td>
+      <td align="center">{{ employee.jobRole }}</td>
+      <td align="center">{{ employee.salary }}</td>
+      <td align="center">{{ employee.birth }}</td>
+      <td align="center">{{ employee.employeeRegistration }}</td>
+      <td align="center"><a [routerLink]="['/employee', employee_id]" class="btn btn-success"><fa-icon [icon]="['fas', 'edit']"></fa-icon> Edit</a></td>
+      <td align="center"><button (click)="deleteEmployee(employee_id)" class="btn btn-danger"><fa-icon [icon]="['fas','trash']"></fa-icon> Delete</button></td>
+    </tr>
+  </tbody>
+</table>
