@@ -1,0 +1,42 @@
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <td>Employee Name</td>
+      <td>Job Role</td>
+      <td>Salary</td>
+      <td>Birth</td>
+      <td>Employee Registration</td>
+      <td colspan="2">Actions</td>
+    </tr>
+  </thead>
+
+  <tbody>
+    <!-- Sessão para mostrar algo na tela, caso não exista nenhum funcionário cadastrado -->
+    <tr *ngIf="!employees.length">
+      <td colspan="6">
+        <h3>NÃO EXISTE FUNCIONÁRIOS CADASTRADOS AINDA</h3>
+        Clique&nbsp;<a [routerLink]="['/employee']">aqui</a>&nbsp;para cadastrar um agora!
+      </td>
+    </tr>
+    <!-- Adicionado trackBy para nao ter re-render desnecessário na lista (isso ajuda quando a lista está muito grande) -->
+    <tr *ngFor="let employee of employees; trackBy: identify">
+      <td>{{ employee.name }}</td>
+      <td>{{ employee.job_role }}</td>
+      <td>{{ employee.salary | currency:'USD':'code' }}</td>
+      <td>{{ employee.birth }}</td>
+      <td>{{ employee.employee_registration }}</td>
+      <td>
+        <a [routerLink]="['/employee', employee.employee_id]" class="btn btn-success">
+          <fa-icon [icon]="icons.faEdit"></fa-icon>
+          Edit
+        </a>
+      </td>
+      <td>
+        <button (click)="deleteEmployee(employee.employee_id)" class="btn btn-danger">
+          <fa-icon [icon]="icons.faTrash"></fa-icon>
+          Delete
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>

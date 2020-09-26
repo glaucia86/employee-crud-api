@@ -1,11 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { SlimLoadingBarService } from 'ng2-slim-loading-bar';
-import { NavigationCancel,
-        Event,
-        NavigationEnd,
-        NavigationError,
-        NavigationStart,
-        Router } from '@angular/router';
+import {
+  NavigationCancel,
+  Event,
+  NavigationEnd,
+  NavigationError,
+  NavigationStart,
+  Router
+} from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -13,13 +15,17 @@ import { NavigationCancel,
   styleUrls: ['./app.component.css']
 })
 
-export class AppComponent {
-  title = 'front-angular';
+export class AppComponent implements OnInit {
+
+  constructor(
+    private slimLoadingBarService: SlimLoadingBarService,
+    private router: Router
+  ) { }
 
   /**
-   * Construtor responsável por trabalhar com a questão do Slim Loading Bar na aplicação.
+   * OnInit responsável por trabalhar com a questão do Slim Loading Bar na aplicação.
    */
-  constructor(private slimLoadingBarService: SlimLoadingBarService, private router: Router) {
+  ngOnInit(): void {
     this.router.events.subscribe((event: Event) => {
       this.navigationInterceptor(event);
     });
