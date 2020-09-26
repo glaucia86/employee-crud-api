@@ -53,7 +53,7 @@ exports.findEmployeeById = async (req, res) => {
                                   FROM employee WHERE employee_id = $1`,
     [employeeId]
   );
-  res.status(200).send(response.rows);
+  res.status(200).send(response.rows[0]);
 };
 
 // ==> Método responsável por atualizar um determinado 'Employee' por Id:
