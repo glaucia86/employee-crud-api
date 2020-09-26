@@ -6,29 +6,30 @@
  * datas em postgresql: https://www.postgresqltutorial.com/postgresql-date/
  */
 
-const db = require('../config/database');
+const db = require("../config/database");
 
 // ==> Método responsável por criar um novo 'Employee':
-exports.createEmployee = async(req, res) => {
-  // ==> Aqui estou atribuindo as propriedades criadas no Front para persistir na
-  // ==> base de dados no lado do Back-End
+exports.createEmployee = async (req, res) => {
   const { name, job_role, salary, birth, employee_registration } = req.body;
-  const { rows } = await db.query(
+  const {
+    rows,
+  } = await db.query(
     "INSERT INTO employee (name, job_role, salary, birth, employee_registration) VALUES ($1, $2, $3, $4, $5)",
-      [name, job_role, salary, birth, employee_registration]
+    [name, job_role, salary, birth, employee_registration]
   );
 
   res.status(201).send({
-    message: 'Employee added successfully!',
+    message: "Employee added successfully!",
     body: {
-      employee: { name, job_role, salary, birth, employee_registration }
+      employee: { name, job_role, salary, birth, employee_registration },
     },
   });
 };
 
 // ==> Método responsável por listar todos os 'Employees':
-exports.listAllEmployees = async(req, res) => {
+exports.listAllEmployees = async (req, res) => {
   const response = await db.query(`SELECT 
+                                      employee_id,
                                       name, 
                                       job_role, 
                                       salary, 
@@ -39,20 +40,24 @@ exports.listAllEmployees = async(req, res) => {
 };
 
 // ==> Método responsável por listar um determinado 'Employee' por Id:
-exports.findEmployeeById = async(req, res) => {
+exports.findEmployeeById = async (req, res) => {
   const employeeId = req.params.id;
-  const response = await db.query(`SELECT 
-                                      name, 
-                                      job_role,
-                                      salary,
-                                      employee_registration
-                                      to_char(birth, 'yyyy-MM-dd') as birth 
-                                  FROM employee WHERE employee_id = $1`, [employeeId]);
+  const response = await db.query(
+                                  `SELECT 
+                                    employee_id,
+                                    name, 
+                                    job_role,
+                                    salary,
+                                    employee_registration,
+                                    to_char(birth, 'yyyy-MM-dd') as birth 
+                                  FROM employee WHERE employee_id = $1`,
+    [employeeId]
+  );
   res.status(200).send(response.rows);
-}
+};
 
 // ==> Método responsável por atualizar um determinado 'Employee' por Id:
-exports.updateEmployeeById = async(req, res) => {
+exports.updateEmployeeById = async (req, res) => {
   const employeeId = req.params.id;
   const { name, job_role, salary, birth, employee_registration } = req.body;
 
@@ -67,13 +72,13 @@ exports.updateEmployeeById = async(req, res) => {
     [name, job_role, salary, birth, employee_registration, employeeId]
   );
 
-  res.status(200).send({ message: 'Employee Updated Successfully!'});
-}
+  res.status(200).send({ message: "Employee Updated Successfully!" });
+};
 
 // ==> Método responsável por deletar um determinado 'Employee' por Id:
-exports.deleteEmployeeById = async(req, res) => {
+exports.deleteEmployeeById = async (req, res) => {
   const employeeId = req.params.id;
-  await db.query('DELETE FROM employee WHERE employee_id = $1', [employeeId]);
+  await db.query("DELETE FROM employee WHERE employee_id = $1", [employeeId]);
 
-  res.status(200).send({ message: 'Employee deleted successfully!' });
-}
+  res.status(200).send({ message: "Employee deleted successfully!" });
+};

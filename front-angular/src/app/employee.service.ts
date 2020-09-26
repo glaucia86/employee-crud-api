@@ -48,4 +48,31 @@ export class EmployeeService {
       .get(`${this.uri}/employees`);
   }
 
+  /**
+   * Método responsável por Atualizar um determinado 'Employee' por Id
+   */
+  editEmployee(id) {
+    // ==> (GET - Url no Back-End): http://localhost:3000/api/employees/:id
+    return this
+      .http
+      .get(`${this.uri}/employees/${id}`);
+  }
+
+  /**
+   * Método responsável pela action do botão Update no arquivo 'employee-edit.component.html'
+   */
+  updateEmployee(name, job_role, salary, birth, employee_registration, id) {
+    const employee = {
+      name,
+      job_role,
+      salary,
+      birth,
+      employee_registration
+    };
+
+    this
+      .http
+      .put(`${this.uri}/employees/${id}`, employee)
+      .subscribe(res => console.log('Done!'));
+  }
 }
