@@ -32,10 +32,9 @@ export class EmployeeService {
     console.log(employee);
 
     // ==> (POST - url no Back-End): http://locahost:3000/api/employees
-    this
+    return this
       .http
-      .post(`${this.uri}/employees`, employee)
-      .subscribe(res => console.log('Feito'));
+      .post(`${this.uri}/employees`, employee);
   }
 
   /**
@@ -70,9 +69,18 @@ export class EmployeeService {
       employee_registration
     };
 
-    this
+    return this
       .http
-      .put(`${this.uri}/employees/${id}`, employee)
-      .subscribe(res => console.log('Done!'));
+      .put(`${this.uri}/employees/${id}`, employee);
+  }
+
+  /**
+   * Método responsável por excluir um 'Employee' pelo id:
+   */
+  deleteEmployee(id) {
+    // ==> (DELETE - Url no Back-End): http://localhost:3000/api/employees/:id
+    return this
+      .http
+      .delete(`${this.uri}/employees/${id}`);
   }
 }

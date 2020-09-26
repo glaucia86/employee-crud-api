@@ -32,16 +32,17 @@ export class EmployeeAddComponent implements OnInit {
    * Método responsável por adicionar um novo 'Employee' --> ação do botão
    */
   createNewEmployee(name, job_role, salary, birth, employee_registration) {
-    this.employeeService.createNewEmployee(name, job_role, salary, birth, employee_registration);
+    this.employeeService.createNewEmployee(name, job_role, salary, birth, employee_registration)
+      .subscribe(res => {
+        Swal.fire({
+          title: 'Employee added successfully!',
+          icon: 'success',
+          timer: 1500,
+          showConfirmButton: true
+        });
 
-    Swal.fire({
-      title: 'Employee added successfully!',
-      icon: 'success',
-      timer: 1500,
-      showConfirmButton: true
-    });
-
-    this.employeeForm.reset();
+        this.employeeForm.reset();
+      });
   }
 
   ngOnInit(): void {

@@ -16,11 +16,11 @@ export class EmployeeEditComponent implements OnInit {
   employee: any = {};
 
   constructor(private route: ActivatedRoute,
-              private router: Router,
-              private employeeService: EmployeeService,
-              private formBuilder: FormBuilder) {
+    private router: Router,
+    private employeeService: EmployeeService,
+    private formBuilder: FormBuilder) {
 
-                this.createForm();
+    this.createForm();
   }
 
   /**
@@ -42,12 +42,12 @@ export class EmployeeEditComponent implements OnInit {
         this.employee = res;
 
         this.employeeForm.setValue({
-            name: this.employee.name,
-            job_role: this.employee.job_role,
-            salary: this.employee.salary,
-            birth: this.employee.birth,
-            employee_registration: this.employee.employee_registration
-          });
+          name: this.employee.name,
+          job_role: this.employee.job_role,
+          salary: this.employee.salary,
+          birth: this.employee.birth,
+          employee_registration: this.employee.employee_registration
+        });
       });
     });
   }
@@ -57,16 +57,18 @@ export class EmployeeEditComponent implements OnInit {
    */
   updateEmployee(name, job_role, salary, birth, employee_registration) {
     this.route.params.subscribe(params => {
-      this.employeeService.updateEmployee(name, job_role, salary, birth, employee_registration, params.id);
-      // ==> Depois que o usuário clicar no botão 'Update', será redirecionado para a página de listar 'Employees'
-      this.router.navigate(['employee']);
+      this.employeeService.updateEmployee(name, job_role, salary, birth, employee_registration, params.id)
+        .subscribe(res => {
+          // ==> Depois que o usuário clicar no botão 'Update', será redirecionado para a página de listar 'Employees'
+          this.router.navigate(['employee']);
 
-      Swal.fire({
-        title: 'Employee updated successfully!',
-        icon: 'success',
-        showConfirmButton: true,
-        timer: 1500
-      });
+          Swal.fire({
+            title: 'Employee updated successfully!',
+            icon: 'success',
+            showConfirmButton: true,
+            timer: 1500
+          });
+        });
     });
   }
 
