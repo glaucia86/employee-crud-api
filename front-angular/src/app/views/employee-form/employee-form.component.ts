@@ -18,7 +18,7 @@ export class EmployeeFormComponent implements OnInit {
   icons = {
     faUserPlus,
     faUserEdit
-  }
+  };
 
   employeeForm: FormGroup = new FormGroup({});
   employee_id: number = 0;
