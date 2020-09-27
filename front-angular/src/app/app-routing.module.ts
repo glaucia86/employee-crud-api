@@ -1,14 +1,25 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { EmployeeAddComponent } from './employee-add/employee-add.component';
-import { EmployeeEditComponent } from './employee-edit/employee-edit.component';
-import { EmployeeGetComponent } from './employee-get/employee-get.component';
-
+// Adicionado metodo LazyLoad para as rotas.
 const routes: Routes = [
-  { path: 'employee/create', component: EmployeeAddComponent },
-  { path: 'employee/:id', component: EmployeeEditComponent },
-  { path: 'employee', component: EmployeeGetComponent }
+  {
+    path: '', // Quando alguem entrar no site: http://localhost:4200/  vai ser redirecionado para http://localhost:4200/employees
+    redirectTo: '/employees',
+    pathMatch: 'full'
+  },
+  {
+    path: 'employees',
+    loadChildren: () => import('./views/employee-list/employee-list.module').then((m) => m.EmployeeListModule)
+  },
+  {
+    path: 'employee',
+    loadChildren: () => import('./views/employee-form/employee-form.module').then((m) => m.EmployeeFormModule)
+  },
+  {
+    path: 'employee/:id',
+    loadChildren: () => import('./views/employee-form/employee-form.module').then((m) => m.EmployeeFormModule)
+  },
 ];
 
 @NgModule({

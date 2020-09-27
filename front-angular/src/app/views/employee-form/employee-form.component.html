@@ -1,16 +1,13 @@
 <div class="card">
   <div class="card-body">
-    <form [formGroup]="employeeForm" novalidate>
-
+    <form [formGroup]="employeeForm" novalidate (submit)="onSubmit()">
       <!-- INÍCIO BLOCO: Employee Name -->
       <div class="form-group">
         <label class="font-weight-bold" for="employee-name">Employee Name</label>
         <input type="text" class="form-control" placeholder="Type your Name" formControlName="name" #name />
       </div>
-      <div *ngIf="employeeForm.controls['name'].invalid
-              && (employeeForm.controls['name'].dirty
-              || employeeForm.controls['name'].touched)" class="alert alert-danger">
-        <div *ngIf="employeeForm.controls['name'].errors.required">
+      <div *ngIf="validatorInputs('name')" class="alert alert-danger">
+        <div *ngIf="validatorErrorsRequired('name')">
           The field 'Employee Name' is required.
         </div>
       </div>
@@ -21,10 +18,8 @@
         <label class="font-weight-bold" for="job-role">Job Role</label>
         <input class="form-control" type="text" placeholder="Type your Job Role" formControlName="job_role" #job_role />
       </div>
-      <div *ngIf="employeeForm.controls['job_role'].invalid
-              && (employeeForm.controls['job_role'].dirty
-              || employeeForm.controls['job_role'].touched)" class="alert alert-danger">
-        <div *ngIf="employeeForm.controls['job_role'].errors.required">
+      <div *ngIf="validatorInputs('job_role')" class="alert alert-danger">
+        <div *ngIf="validatorErrorsRequired('job_role')">
           The field 'Job Role' is required.
         </div>
       </div>
@@ -35,10 +30,8 @@
         <label class="font-weight-bold" for="salary">Salary</label>
         <input class="form-control" type="number" placeholder="Type your Salary" formControlName="salary" #salary />
       </div>
-      <div *ngIf="employeeForm.controls['salary'].invalid
-              && (employeeForm.controls['salary'].dirty
-              || employeeForm.controls['salary'].touched)" class="alert alert-danger">
-        <div *ngIf="employeeForm.controls['salary'].errors.required">
+      <div *ngIf="validatorInputs('salary')" class="alert alert-danger">
+        <div *ngIf="validatorErrorsRequired('salary')">
           The field 'Salary' is required.
         </div>
       </div>
@@ -48,12 +41,9 @@
       <div class="form-group">
         <label class="font-weight-bold" for="birth">Birth</label>
         <input class="form-control" type="date" placeholder="YYYY/MM/DD/" formControlName="birth" #birth />
-        <!-- <input type="date" class="form-control" name="birth" [(ngModel)]="matterData.birth" [ngModel]="matterData.birth | date:'YYYY/MM/dd'" required>-->
       </div>
-      <div *ngIf="employeeForm.controls['birth'].invalid
-              && (employeeForm.controls['birth'].dirty
-              || employeeForm.controls['birth'].touched)" class="alert alert-danger">
-        <div *ngIf="employeeForm.controls['birth'].errors.required">
+      <div *ngIf="validatorInputs('birth')" class="alert alert-danger">
+        <div *ngIf="validatorErrorsRequired('birth')">
           The field 'Birth' is required.
         </div>
       </div>
@@ -65,18 +55,25 @@
         <input class="form-control" type="text" class="form-control" placeholder="Type your Employee Registration"
           formControlName="employee_registration" #employee_registration />
       </div>
-      <div *ngIf="employeeForm.controls['employee_registration'].invalid
-              && (employeeForm.controls['employee_registration'].dirty
-              || employeeForm.controls['employee_registration'].touched)" class="alert alert-danger">
-        <div *ngIf="employeeForm.controls['employee_registration'].errors.required">
+      <div *ngIf="validatorInputs('employee_registration')" class="alert alert-danger">
+        <div *ngIf="validatorErrorsRequired('employee_registration')">
           The field 'Employee Registration' is required.
         </div>
       </div>
       <!-- FIM BLOCO: Employee Registration -->
 
       <div class="form-group">
-        <button (click)="updateEmployee(name.value, job_role.value, salary.value, birth.value, employee_registration. value)" type="submit" class="btn btn-primary"
-          [disabled]="employeeForm.invalid"> <fa-icon [icon]="['fas','edit']"></fa-icon> Atualizar
+        <!-- O botão será o mesmo tanto para cadastrar, quanto editar pois a unica coisa que ele faz é chamar o método 'onSubmit' do formulário -->
+        <button class="btn btn-primary" type="submit" [disabled]="employeeForm.pristine || employeeForm.invalid">
+          <!-- Caso employee_id não exista, então mostra o icon e a mensagem de registrar -->
+          <ng-container *ngIf="!employee_id">
+            <fa-icon [icon]="icons.faUserPlus"></fa-icon> Register Employee
+          </ng-container>
+
+          <!-- Caso employee_id exista, então mostra o icon e a mensagem de editar -->
+          <ng-container *ngIf="employee_id">
+            <fa-icon [icon]="icons.faUserEdit"></fa-icon> Edit Employee
+          </ng-container>
         </button>
       </div>
     </form>
