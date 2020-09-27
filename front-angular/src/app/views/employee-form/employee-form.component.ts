@@ -103,9 +103,9 @@ export class EmployeeFormComponent implements OnInit {
   updateEmployee(): void {
     // ==> cria um novo objeto com as mesmas propriedades do formulário, para que seja possivel adicionar o id do 'Employee'
     const employee: Employee = {
-      id: this.employee_id,
-      ...this.employeeForm.value // adiciona ao objeto, todas as propriedades do formulário: name, job_role, salary, birth e employee_registration
-    }
+      employee_id: this.employee_id,
+      ...this.employeeForm.value
+    };
     this.employeeService.updateEmployee(employee).subscribe(res => {
       // ==> Depois que o usuário clicar no botão 'Update', será redirecionado para a página de listar 'Employees'
       Swal.fire({

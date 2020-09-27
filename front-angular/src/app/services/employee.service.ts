@@ -49,7 +49,7 @@ export class EmployeeService {
    * Método responsável pela action do botão Update no arquivo 'employee-edit.component.html'
    */
   updateEmployee(employee: Employee): Observable<any> {
-    return this.http.put(`${environment.baseUrl}/employees/${employee.id}`, employee);
+    return this.http.put(`${environment.baseUrl}/employees/${employee.employee_id}`, employee);
   }
 
   /**
