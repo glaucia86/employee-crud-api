@@ -3,10 +3,9 @@
 Repositório responsável pela série de vídeos desenvolvendo uma única API que será usada em diferentes frameworks:
 
 * [Angular](https://angular.io/)
-* React
-* Vue
-* Svelte
-* Fast Design
+* [React](https://pt-br.reactjs.org/)
+* [Vue](https://vuejs.org/)
+* [Svelte](https://svelte.dev/)
 
 A intenção é criar uma aplicação CRUD (API) que permite ser usada nesses 4 principais frameworks!
 Se desejarem entender o passo a passo no desenvolvimento dessa API, eu escrevi um artigo no dev.to **[AQUI](https://dev.to/azure/desenvolvendo-uma-aplicacao-crud-node-js-com-postgresql-3clk)**. 
