@@ -88,10 +88,8 @@ export class EmployeeListComponent implements OnInit {
             allowOutsideClick: false,
             allowEnterKey: true,
             allowEscapeKey: false,
-          }).then((data) => {
-            // ==> Renovar a lista apos o usuario clicar no botao OK da confirmação da remoção.
-            this.getEmployees();
           });
+          this.getEmployees(); // ==> Renovar a lista.
         });
       }
     });

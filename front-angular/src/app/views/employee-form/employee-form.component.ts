@@ -20,7 +20,13 @@ export class EmployeeFormComponent implements OnInit {
     faUserEdit
   };
 
-  employeeForm: FormGroup = new FormGroup({});
+  employeeForm: FormGroup = this.formBuilder.group({
+    name: ['', Validators.required],
+    job_role: ['', Validators.required],
+    salary: ['', Validators.required],
+    birth: ['', Validators.required],
+    employee_registration: ['', Validators.required],
+  });
   employee_id: number = 0;
 
   constructor(
@@ -31,20 +37,6 @@ export class EmployeeFormComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.createForm();
-  }
-
-  /**
-   * Método para criação do formulário reativo
-   */
-  createForm(): void {
-    this.employeeForm = this.formBuilder.group({
-      name: ['', Validators.required],
-      job_role: ['', Validators.required],
-      salary: ['', Validators.required],
-      birth: ['', Validators.required],
-      employee_registration: ['', Validators.required]
-    });
     this.checkParam();
   }
 

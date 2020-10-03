@@ -32,7 +32,6 @@ export class AppComponent implements OnInit {
   }
 
   /**
-   *
    * @param event Método responsável por tratar as condicionais em relação ao Loading Bar
    */
   private navigationInterceptor(event: Event): void {
