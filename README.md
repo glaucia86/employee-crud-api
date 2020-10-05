@@ -12,19 +12,19 @@ Se desejarem entender o passo a passo no desenvolvimento dessa API, eu escrevi u
 
 ## 🚀 Recursos Utilizados 
 
-* **[Visual Studio Code](https://code.visualstudio.com/?WT.mc_id=livecoding-github-gllemos)**
+* **[Visual Studio Code](https://code.visualstudio.com/?WT.mc_id=javascript-9652-gllemos)**
 * **[Node.js](https://nodejs.org/en/)**
 * **[Postman](https://www.getpostman.com/)**
 * **[PostgreSQL - PgAdmin](https://www.postgresql.org/download/)**
-* **[Conta - Azure](https://azure.microsoft.com/?WT.mc_id=livecoding-github-gllemos)**
-* **[Static Web Apps](https://docs.microsoft.com/azure/static-web-apps/?WT.mc_id=livecoding-github-gllemos)**
-* **[Azure Web App Service](https://azure.microsoft.com/services/app-service/?WT.mc_id=livecoding-github-gllemos)**
+* **[Conta - Azure](https://azure.microsoft.com/?WT.mc_id=javascript-9652-gllemos)**
+* **[Static Web Apps](https://docs.microsoft.com/azure/static-web-apps/?WT.mc_id=javascript-9652-gllemos)**
+* **[Azure Web App Service](https://azure.microsoft.com/services/app-service/?WT.mc_id=javascript-9652-gllemos)**
 * **[Extensão Visual Studio Code: Azure Functions](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions&WT.mc_id=nodejs_postgresql_azure-github-gllemos)**
-* **[Azure Storage Account](https://azure.microsoft.com/services/storage/?WT.mc_id=livecoding-github-gllemos)**
+* **[Azure Storage Account](https://azure.microsoft.com/services/storage/?WT.mc_id=javascript-9652-gllemos)**
 
 ## ⭐️ Conta - Azure For Students 
 
-Caso você seja um(a) estudante de alguma Instituição de Ensino de Faculdade ou Universidade, poderá criar sua conta no **[Azure for Students](https://azure.microsoft.com/free/students/?WT.mc_id=livecoding-github-gllemos)**. Essa conta te dará o benefício em possuir crédito de USD 100,00 para usar os serviços de maneira gratuita, sem necessidade de possuir um cartão de crédito. Para ativar essa conta, bastam acessar o link ao lado: **[AQUI](https://azure.microsoft.com/free/students/?WT.mc_id=livecoding-github-gllemos)**
+Caso você seja um(a) estudante de alguma Instituição de Ensino de Faculdade ou Universidade, poderá criar sua conta no **[Azure for Students](https://azure.microsoft.com/free/students/?WT.mc_id=javascript-9652-gllemos)**. Essa conta te dará o benefício em possuir crédito de USD 100,00 para usar os serviços de maneira gratuita, sem necessidade de possuir um cartão de crédito. Para ativar essa conta, bastam acessar o link ao lado: **[AQUI](https://azure.microsoft.com/free/students/?WT.mc_id=javascript-9652-gllemos)**
 
 ## 💻 Série de Vídeos
 
@@ -69,15 +69,15 @@ Abaixo seguem os links dos projetos realizados até o momento para cada framewor
 
 Como dito durante as live codings, sempre estaremos citando links e recursos importantes que direcionarão para: documentações, cursos gratuitos, livros e conteúdos relacionados a Node.js & PostgreSQL. Abaixo, segue uma lista desses recursos, que são considerados leituras, cursos ou livros recomendados:
 
-- ✅ **[Banco de Dados do Azure para PostgreSQL](https://docs.microsoft.com/azure/postgresql/?WT.mc_id=livecoding-github-gllemos)**
-- ✅ **[Crie um BD do Azure para PostgreSQL no Azure](https://docs.microsoft.com/azure/postgresql/quickstart-create-server-database-portal?WT.mc_id=livecoding-github-gllemos)**
-- ✅ **[Tutorial: Crie um Painel de Análise em Tempo Real usando BD Azure PostgreSQL](https://docs.microsoft.com/azure/postgresql/tutorial-design-database-hyperscale-realtime?WT.mc_id=livecoding-github-gllemos)**
-- ✅ **[Azure para devs JavaScript & Node.js](https://docs.microsoft.com/javascript/azure/?WT.mc_id=livecoding-github-gllemos&view=azure-node-latest)**
-- ✅ **[Documentação Azure Functions](https://docs.microsoft.com/azure/azure-functions/?WT.mc_id=livecoding-github-gllemos)**
-- ✅ **[Criando a sua Primeira Função no Visual Studio Code](https://docs.microsoft.com/azure/azure-functions/functions-create-first-function-vs-code?WT.mc_id=livecoding-github-gllemos)**
-- ✅ **[Extensão Vs Code – Azure Functions](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions&WT.mc_id=livecoding-github-gllemos)**
-- ✅ **[E-Book Grátis - Azure Serverless Computing Cookbook](https://azure.microsoft.com/resources/azure-serverless-computing-cookbook/?WT.mc_id=nodejs_postgresql_azure-github-gllemos)**
-- ✅ **[Cursos Grátis - Azure Functions](https://docs.microsoft.com/learn/paths/create-serverless-applications/?WT.mc_id=livecoding-github-gllemos)**
+- ✅ **[Banco de Dados do Azure para PostgreSQL](https://docs.microsoft.com/azure/postgresql/?WT.mc_id=javascript-9652-gllemos)**
+- ✅ **[Crie um BD do Azure para PostgreSQL no Azure](https://docs.microsoft.com/azure/postgresql/quickstart-create-server-database-portal?WT.mc_id=javascript-9652-gllemos)**
+- ✅ **[Tutorial: Crie um Painel de Análise em Tempo Real usando BD Azure PostgreSQL](https://docs.microsoft.com/azure/postgresql/tutorial-design-database-hyperscale-realtime?WT.mc_id=javascript-9652-gllemos)**
+- ✅ **[Azure para devs JavaScript & Node.js](https://docs.microsoft.com/javascript/azure/?WT.mc_id=javascript-9652-gllemos&view=azure-node-latest)**
+- ✅ **[Documentação Azure Functions](https://docs.microsoft.com/azure/azure-functions/?WT.mc_id=javascript-9652-gllemos)**
+- ✅ **[Criando a sua Primeira Função no Visual Studio Code](https://docs.microsoft.com/azure/azure-functions/functions-create-first-function-vs-code?WT.mc_id=javascript-9652-gllemos)**
+- ✅ **[Extensão Vs Code – Azure Functions](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions&WT.mc_id=javascript-9652-gllemos)**
+- ✅ **[E-Book Grátis - Azure Serverless Computing Cookbook](https://azure.microsoft.com/resources/azure-serverless-computing-cookbook/?WT.mc_id=javascript-9652-gllemos)**
+- ✅ **[Cursos Grátis - Azure Functions](https://docs.microsoft.com/learn/paths/create-serverless-applications/?WT.mc_id=javascript-9652-gllemos)**
 
 ## ❓ Tenho Dúvidas... O que Faço?! 
 
