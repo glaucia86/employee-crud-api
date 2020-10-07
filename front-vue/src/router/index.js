@@ -1,4 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router';
+import NProgress from 'nprogress';
 
 const routes = [
   {
@@ -21,6 +22,19 @@ const routes = [
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes,
+});
+
+router.beforeResolve((to, from, next) => {
+  // Quando houver o carregamento de uma págona incial, então usar o NProgress
+  if (to.name) {
+    NProgress.start();
+  }
+  next();
+});
+
+router.afterEach((to, from) => {
+  // Completa a animação da rota usando o progress bar
+  NProgress.done();
 });
 
 export default router;
