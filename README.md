@@ -18,7 +18,6 @@ Se desejarem entender o passo a passo no desenvolvimento dessa API, eu escrevi u
 * **[PostgreSQL - PgAdmin](https://www.postgresql.org/download/)**
 * **[Conta - Azure](https://azure.microsoft.com/?WT.mc_id=javascript-9652-gllemos)**
 * **[Static Web Apps](https://docs.microsoft.com/azure/static-web-apps/?WT.mc_id=javascript-9652-gllemos)**
-* **[Azure Web App Service](https://azure.microsoft.com/services/app-service/?WT.mc_id=javascript-9652-gllemos)**
 * **[Extensão Visual Studio Code: Azure Functions](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions&WT.mc_id=nodejs_postgresql_azure-github-gllemos)**
 * **[Azure Storage Account](https://azure.microsoft.com/services/storage/?WT.mc_id=javascript-9652-gllemos)**
 
