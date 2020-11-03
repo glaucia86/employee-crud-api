@@ -1,8 +1,8 @@
 import Vue from 'vue';
 import VueSweetalert2 from 'vue-sweetalert2';
+import Vuelidate from 'vuelidate';
 import App from './App.vue';
 import router from './router';
-import Vuelidate from 'vuelidate';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../node_modules/nprogress/nprogress.css';
