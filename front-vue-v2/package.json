@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "serve": "vue-cli-service serve && vue-cli-service lint",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
@@ -14,7 +14,8 @@
     "nprogress": "^0.2.0",
     "vue": "^2.6.11",
     "vue-router": "^3.2.0",
-    "vue-sweetalert2": "^3.0.8"
+    "vue-sweetalert2": "^3.0.8",
+    "vuelidate": "^0.7.6"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
