@@ -13,7 +13,7 @@
         </tr>
       </thead>
       <tbody>
-        <tr v-for="employee in employees" :key="employee._id">
+        <tr v-if="employees.length != 0" v-for="employee in employees" :key="employee._id">
           <td>{{ employee.name }}</td>
           <td>{{ employee.job_role }}</td>
           <td>{{ employee.salary }}</td>
