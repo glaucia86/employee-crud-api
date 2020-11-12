@@ -17,7 +17,6 @@ export default {
       const response = await Api().post('/employees', employee);
       return response.data;
     } catch (error) {
-      // console.log(error);
       return console.log(error);
     }
   },
