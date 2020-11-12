@@ -27,7 +27,7 @@
             </router-link>
           </td>
           <td>
-            <button @click="deleteEmployee(employee.employee_id)" class="btn btn-danger">
+            <button @click="removeEmployee(employee.employee_id)" class="btn btn-danger">
               <font-awesome-icon :icon="['fas', 'trash']" /> Delete
             </button>
           </td>
