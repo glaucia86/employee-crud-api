@@ -54,7 +54,7 @@
               id="birth"
               name="birth"
               class="form-control"
-              v-model="employeeForm.salary"
+              v-model="employeeForm.birth"
             >
           </div>
           <!--FIM DO BLOCO: Birth-->
