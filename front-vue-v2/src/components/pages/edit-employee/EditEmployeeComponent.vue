@@ -5,7 +5,7 @@
         <h3>Update Employee</h3>
       </div>
       <div class="card-body">
-        <form v-on:submit.prevent="updateFormEmployee()">
+        <form>
 
           <!--INÍCIO DO BLOCO: Employee Name-->
           <div class="form-group">
@@ -72,7 +72,7 @@
           </div>
           <!--FIM DO BLOCO: Birth-->
           <div class="form-group">
-            <button @click="submit" class="btn btn-primary">
+            <button @click="updateEmployee" class="btn btn-primary">
               <font-awesome-icon :icon="['fas', 'user-edit']"/> Update
             </button>
           </div>
