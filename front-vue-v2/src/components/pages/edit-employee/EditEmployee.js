@@ -29,7 +29,7 @@ export default {
       this.employeeForm = { ...response };
     },
 
-    async updateEmployee() {
+    async updateFormEmployee() {
       // Chamada do service passando as propriedades por meio do 'employeeForm' (funciona)
       await EmployeeService.updateEmployee(this.employeeForm);
       this.$swal({

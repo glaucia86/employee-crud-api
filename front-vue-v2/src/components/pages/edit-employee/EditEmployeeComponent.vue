@@ -5,7 +5,7 @@
         <h3>Update Employee</h3>
       </div>
       <div class="card-body">
-        <form v-on:submit.prevent="updateEmployee()">
+        <form v-on:submit.prevent="updateFormEmployee()">
 
           <!--INÍCIO DO BLOCO: Employee Name-->
           <div class="form-group">
