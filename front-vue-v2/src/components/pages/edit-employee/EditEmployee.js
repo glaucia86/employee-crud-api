@@ -30,14 +30,20 @@ export default {
     },
 
     async updateEmployee() {
-      await EmployeeService.updateEmployee({
-        id: this.$route.params.id,
-        name: this.name,
-        job_role: this.job_role,
-        salary: this.salary,
-        employee_registration: this.employee_registration,
+      // Chamada do service passando as propriedades por meio do 'employeeForm' (funciona)
+      await EmployeeService.updateEmployee(this.employeeForm);
+      this.$swal({
+        title: 'Employee updated successfully!',
+        icon: 'success',
+        showConfirmButton: true,
+        allowOutsideClick: false,
+        allowEnterKey: true,
+        allowEscapeKey: false,
+      }).then((data) => {
+        this.$router.push({
+          name: 'list',
+        });
       });
-      this.$router.push({ name: 'list' });
     },
   },
 };
