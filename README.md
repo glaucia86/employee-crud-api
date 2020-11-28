@@ -61,20 +61,20 @@ Abaixo seguem os links dos projetos realizados até o momento para cada framewor
 | **[Vídeo 7](https://youtu.be/4cRI8kmIn6w)** | Vídeo 7 - Vue + Node.js + PostgreSQL |
 | **[Vídeo 8](https://youtu.be/lUlXOWh3Rkk)** | Vídeo 8 - Vue + Node.js + PostgreSQL |
 
-### **Svelte**
+### **React [EM BREVE]**
 | Vídeo Aula | Descrição |
 |---|---|
-| **[Teste](teste)** | Teste |
-
-### **React**
+| **[Video 1 - EM BREVE]()** | Video 1 - EM BREVE |
+### **Svelte [EM BREVE]**
 | Vídeo Aula | Descrição |
 |---|---|
-| **[Teste](teste)** | Teste |
+| **[Video 1 - EM BREVE]()** | Video 1 - EM BREVE |
 
 ## ❗️ Links & Recursos Importantes
 
 Como dito durante as live codings, sempre estaremos citando links e recursos importantes que direcionarão para: documentações, cursos gratuitos, livros e conteúdos relacionados a Node.js & PostgreSQL. Abaixo, segue uma lista desses recursos, que são considerados leituras, cursos ou livros recomendados:
 
+- ✅ **[]()**
 - ✅ **[Banco de Dados do Azure para PostgreSQL](https://docs.microsoft.com/azure/postgresql/?WT.mc_id=javascript-9652-gllemos)**
 - ✅ **[Crie um BD do Azure para PostgreSQL no Azure](https://docs.microsoft.com/azure/postgresql/quickstart-create-server-database-portal?WT.mc_id=javascript-9652-gllemos)**
 - ✅ **[Tutorial: Crie um Painel de Análise em Tempo Real usando BD Azure PostgreSQL](https://docs.microsoft.com/azure/postgresql/tutorial-design-database-hyperscale-realtime?WT.mc_id=javascript-9652-gllemos)**
