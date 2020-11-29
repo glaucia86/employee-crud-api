@@ -2,10 +2,10 @@
 
 Repositório responsável pela série de vídeos desenvolvendo uma única API que será usada em diferentes frameworks:
 
-* [Angular](https://angular.io/)
-* [React](https://pt-br.reactjs.org/)
-* [Vue](https://vuejs.org/)
-* [Svelte](https://svelte.dev/)
+* **Project #1 - [Angular](https://angular.io/)**
+* **Project #2 - [Vue](https://vuejs.org/)**
+* **Project #3 - [React](https://pt-br.reactjs.org/)**
+* **Project #4 - [Svelte](https://svelte.dev/)**
 
 A intenção é criar uma aplicação CRUD (API) que permite ser usada nesses 4 principais frameworks!
 Se desejarem entender o passo a passo no desenvolvimento dessa API, eu escrevi um artigo no dev.to **[AQUI](https://dev.to/azure/desenvolvendo-uma-aplicacao-crud-node-js-com-postgresql-3clk)**. 
@@ -18,7 +18,7 @@ Se desejarem entender o passo a passo no desenvolvimento dessa API, eu escrevi u
 * **[PostgreSQL - PgAdmin](https://www.postgresql.org/download/)**
 * **[Conta - Azure](https://azure.microsoft.com/?WT.mc_id=javascript-9652-gllemos)**
 * **[Static Web Apps](https://docs.microsoft.com/azure/static-web-apps/?WT.mc_id=javascript-9652-gllemos)**
-* **[Extensão Visual Studio Code: Azure Functions](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions&WT.mc_id=javascript-0000-gllemos)**
+* **[Extensão Visual Studio Code: Azure Functions](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions&WT.mc_id=javascript-9652-gllemos)**
 * **[Azure Storage Account](https://azure.microsoft.com/services/storage/?WT.mc_id=javascript-9652-gllemos)**
 
 ## ⭐️ Conta - Azure For Students 
@@ -52,7 +52,14 @@ Abaixo seguem os links dos projetos realizados até o momento para cada framewor
 ### **Vue**
 | Vídeo Aula | Descrição |
 |---|---|
-| **[Teste](teste)** | Teste |
+| **[Vídeo 1](https://youtu.be/G_8Pi7Y1eiE)** | Vídeo 1 - Vue + Node.js + PostgreSQL |
+| **[Vídeo 2](https://youtu.be/8jppxpWxYzM)** | Vídeo 2 - Vue + Node.js + PostgreSQL |
+| **[Vídeo 3](https://youtu.be/ZP_1XOC6gnA)** | Vídeo 3 - Vue + Node.js + PostgreSQL |
+| **[Vídeo 4](https://youtu.be/K-PIpLD8zvs)** | Vídeo 4 - Vue + Node.js + PostgreSQL |
+| **[Vídeo 5](https://youtu.be/UysSATJ8wb0)** | Vídeo 5 - Vue + Node.js + PostgreSQL |
+| **[Vídeo 6](https://youtu.be/3NxCKy2qtHI)** | Vídeo 6 - Vue + Node.js + PostgreSQL |
+| **[Vídeo 7](https://youtu.be/4cRI8kmIn6w)** | Vídeo 7 - Vue + Node.js + PostgreSQL |
+| **[Vídeo 8](https://youtu.be/lUlXOWh3Rkk)** | Vídeo 8 - Vue + Node.js + PostgreSQL |
 
 ### **Svelte**
 | Vídeo Aula | Descrição |
