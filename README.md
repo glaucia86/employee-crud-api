@@ -74,7 +74,7 @@ Abaixo seguem os links dos projetos realizados até o momento para cada framewor
 
 Como dito durante as live codings, sempre estaremos citando links e recursos importantes que direcionarão para: documentações, cursos gratuitos, livros e conteúdos relacionados a Node.js & PostgreSQL. Abaixo, segue uma lista desses recursos, que são considerados leituras, cursos ou livros recomendados:
 
-- ✅ **[]()**
+- ✅ **[Curso Grátis de Criando Aplicações JavaScript com Node.js](https://docs.microsoft.com/learn/paths/build-javascript-applications-nodejs/?WT.mc_id=javascript-9652-gllemos)**
 - ✅ **[Banco de Dados do Azure para PostgreSQL](https://docs.microsoft.com/azure/postgresql/?WT.mc_id=javascript-9652-gllemos)**
 - ✅ **[Crie um BD do Azure para PostgreSQL no Azure](https://docs.microsoft.com/azure/postgresql/quickstart-create-server-database-portal?WT.mc_id=javascript-9652-gllemos)**
 - ✅ **[Tutorial: Crie um Painel de Análise em Tempo Real usando BD Azure PostgreSQL](https://docs.microsoft.com/azure/postgresql/tutorial-design-database-hyperscale-realtime?WT.mc_id=javascript-9652-gllemos)**
