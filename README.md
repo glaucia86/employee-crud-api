@@ -59,7 +59,7 @@ Abaixo seguem os links dos projetos realizados até o momento para cada framewor
 | **[Vídeo 5](https://youtu.be/UysSATJ8wb0)** | Vídeo 5 - Vue + Node.js + PostgreSQL |
 | **[Vídeo 6](https://youtu.be/3NxCKy2qtHI)** | Vídeo 6 - Vue + Node.js + PostgreSQL |
 | **[Vídeo 7](https://youtu.be/4cRI8kmIn6w)** | Vídeo 7 - Vue + Node.js + PostgreSQL |
-| **[Vídeo 8](https://youtu.be/lUlXOWh3Rkk)** | Vídeo 8 - Vue + Node.js + PostgreSQL |
+| **[Vídeo 8](youtube.com/watch?v=lUlXOWh3Rkk)** | Vídeo 8 - Vue + Node.js + PostgreSQL |
 
 ### **React [EM BREVE]**
 | Vídeo Aula | Descrição |
