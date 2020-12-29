@@ -61,6 +61,10 @@ Abaixo seguem os links dos projetos realizados até o momento para cada framewor
 | **[Vídeo 7](https://youtu.be/4cRI8kmIn6w)** | Vídeo 7 - Vue + Node.js + PostgreSQL |
 | **[Vídeo 8](youtube.com/watch?v=lUlXOWh3Rkk)** | Vídeo 8 - Vue + Node.js + PostgreSQL |
 
+### **Deploy no Azure & Migração para Arquitetura Serverless [EM BREVE]**
+| Vídeo Aula | Descrição |
+|---|---|
+
 ### **React [EM BREVE]**
 | Vídeo Aula | Descrição |
 |---|---|
