@@ -91,6 +91,6 @@ Como dito durante as live codings, sempre estaremos citando links e recursos imp
 
 ## ❓ Tenho Dúvidas... O que Faço?! 
 
-Caso tenham dúvidas aos códigos desenvolvidos durante a série de artigos, sintam-se a vontade em abrir uma **[ISSUE AQUI](https://github.com/glaucia86/employee-crud-api/issues)**. Assim que possível, estarei respondendo as todas as dúvidas que tiverem!
+Caso tenham dúvidas aos códigos desenvolvidos durante a série de vídeos/live, sintam-se a vontade em abrir uma **[ISSUE AQUI](https://github.com/glaucia86/employee-crud-api/issues)**. Assim que possível, estarei respondendo as todas as dúvidas que tiverem!
 
 **(documentação em desenvolvimento)**
