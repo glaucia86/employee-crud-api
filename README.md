@@ -35,15 +35,15 @@ Abaixo seguem os links dos projetos realizados até o momento para cada framewor
 
 | Vídeo Aula | Descrição |
 |---|---|
-| **[Vídeo 1](https://youtu.be/XPkZP2KQtZI)** | Vídeo 1 - Angular + Node.js + PostgreSQL |
-| **[Vídeo 2](https://youtu.be/igw22ZmaGrc)** | Vídeo 2 - Angular + Node.js + PostgreSQL |
-| **[Vídeo 3](https://youtu.be/igw22ZmaGrc)** | Vídeo 3 - Angular + Node.js + PostgreSQL |
-| **[Vídeo 4](https://youtu.be/NVRmVIQZqnk)** | Vídeo 4 - Angular + Node.js + PostgreSQL |
-| **[Vídeo 5](https://youtu.be/YGsUk7s3iv0)** | Vídeo 5 - Angular + Node.js + PostgreSQL |
-| **[Vídeo 6](https://youtu.be/MvU5iSlVfj8)** | Vídeo 6 - Angular + Node.js + PostgreSQL |
-| **[Vídeo 7](https://youtu.be/8OLpIEBZXHk)** | Vídeo 7 - Angular + Node.js + PostgreSQL |
-| **[Vídeo 8](https://youtu.be/74M9Wcor5Ag)** | Vídeo 8 - Angular + Node.js + PostgreSQL |
-| **[Vídeo 9](https://youtu.be/1r-E_I9v9qo)** | Vídeo 9 - Angular + Node.js + PostgreSQL |
+| **[Vídeo 01](https://youtu.be/XPkZP2KQtZI)** | Vídeo 1 - Angular + Node.js + PostgreSQL |
+| **[Vídeo 02](https://youtu.be/igw22ZmaGrc)** | Vídeo 2 - Angular + Node.js + PostgreSQL |
+| **[Vídeo 03](https://youtu.be/igw22ZmaGrc)** | Vídeo 3 - Angular + Node.js + PostgreSQL |
+| **[Vídeo 04](https://youtu.be/NVRmVIQZqnk)** | Vídeo 4 - Angular + Node.js + PostgreSQL |
+| **[Vídeo 05](https://youtu.be/YGsUk7s3iv0)** | Vídeo 5 - Angular + Node.js + PostgreSQL |
+| **[Vídeo 06](https://youtu.be/MvU5iSlVfj8)** | Vídeo 6 - Angular + Node.js + PostgreSQL |
+| **[Vídeo 07](https://youtu.be/8OLpIEBZXHk)** | Vídeo 7 - Angular + Node.js + PostgreSQL |
+| **[Vídeo 08](https://youtu.be/74M9Wcor5Ag)** | Vídeo 8 - Angular + Node.js + PostgreSQL |
+| **[Vídeo 09](https://youtu.be/1r-E_I9v9qo)** | Vídeo 9 - Angular + Node.js + PostgreSQL |
 | **[Vídeo 10](https://youtu.be/TIri3VfL6Hs)** | Vídeo 10 - Angular + Node.js + PostgreSQL |
 | **[Vídeo 11](https://youtu.be/p9sRUIdWFZE)** | Vídeo 11 - Angular + Node.js + PostgreSQL |
 | **[Vídeo 12](https://youtu.be/1XuItO5rOLY)** | Vídeo 12 - Angular + Node.js + PostgreSQL |
@@ -52,14 +52,14 @@ Abaixo seguem os links dos projetos realizados até o momento para cada framewor
 ### **Vue**
 | Vídeo Aula | Descrição |
 |---|---|
-| **[Vídeo 1](https://youtu.be/G_8Pi7Y1eiE)** | Vídeo 1 - Vue + Node.js + PostgreSQL |
-| **[Vídeo 2](https://youtu.be/8jppxpWxYzM)** | Vídeo 2 - Vue + Node.js + PostgreSQL |
-| **[Vídeo 3](https://youtu.be/ZP_1XOC6gnA)** | Vídeo 3 - Vue + Node.js + PostgreSQL |
-| **[Vídeo 4](https://youtu.be/K-PIpLD8zvs)** | Vídeo 4 - Vue + Node.js + PostgreSQL |
-| **[Vídeo 5](https://youtu.be/UysSATJ8wb0)** | Vídeo 5 - Vue + Node.js + PostgreSQL |
-| **[Vídeo 6](https://youtu.be/3NxCKy2qtHI)** | Vídeo 6 - Vue + Node.js + PostgreSQL |
-| **[Vídeo 7](https://youtu.be/4cRI8kmIn6w)** | Vídeo 7 - Vue + Node.js + PostgreSQL |
-| **[Vídeo 8](youtube.com/watch?v=lUlXOWh3Rkk)** | Vídeo 8 - Vue + Node.js + PostgreSQL |
+| **[Vídeo 01](https://youtu.be/G_8Pi7Y1eiE)** | Vídeo 1 - Vue + Node.js + PostgreSQL |
+| **[Vídeo 02](https://youtu.be/8jppxpWxYzM)** | Vídeo 2 - Vue + Node.js + PostgreSQL |
+| **[Vídeo 03](https://youtu.be/ZP_1XOC6gnA)** | Vídeo 3 - Vue + Node.js + PostgreSQL |
+| **[Vídeo 04](https://youtu.be/K-PIpLD8zvs)** | Vídeo 4 - Vue + Node.js + PostgreSQL |
+| **[Vídeo 05](https://youtu.be/UysSATJ8wb0)** | Vídeo 5 - Vue + Node.js + PostgreSQL |
+| **[Vídeo 06](https://youtu.be/3NxCKy2qtHI)** | Vídeo 6 - Vue + Node.js + PostgreSQL |
+| **[Vídeo 07](https://youtu.be/4cRI8kmIn6w)** | Vídeo 7 - Vue + Node.js + PostgreSQL |
+| **[Vídeo 08](youtube.com/watch?v=lUlXOWh3Rkk)** | Vídeo 8 - Vue + Node.js + PostgreSQL |
 
 ### **Deploy no Azure & Migração para Arquitetura Serverless [EM BREVE]**
 | Vídeo Aula | Descrição |
