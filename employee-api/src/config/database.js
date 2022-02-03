@@ -12,7 +12,7 @@ dotenv.config();
 
 // ==> Conexão com a Base de Dados:
 const pool = new Pool({
-  connectionString: process.env.DATABASE_URL
+  connectionString: process.env.DATABASE_CITUS_DATA_URL
 });
 
 pool.on('error', (err, client) => {
